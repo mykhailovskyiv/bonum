@@ -32,7 +32,7 @@ body {
         backdrop-filter: blur(40px);
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: flex-end;
     }
     &-text {
         display: none;
@@ -46,6 +46,16 @@ body {
         margin-bottom: 15px;
         .lang {
             display: none;
+            cursor: pointer;
+        }
+        .icon {
+            position: relative;
+            cursor: pointer;
+            transition-duration: .7s;
+        }
+        .icon:hover {
+            bottom: 5px;
+            transition-duration: .7s;
         }
     }
     &-title {
@@ -55,6 +65,10 @@ body {
         align-items: center;
         &__logo {
             width: 45px;
+        }
+        .lang {
+            display: flex;
+            margin-bottom: 15px;
         }
         
     }
@@ -264,7 +278,7 @@ body {
     &-single.four {
         display: flex;
         width: 100%;
-        justify-content: end;
+        justify-content: flex-end;
 
     }
     &-block.second {
